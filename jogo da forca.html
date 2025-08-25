@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Menu inicial -->
+    <div id="menu">
+      <h1>Jogo da Forca</h1>
+      <p>Escolha a dificuldade:</p>
+      <button class="nivel" data-nivel="facil">Fácil</button>
+      <button class="nivel" data-nivel="medio">Médio</button>
+      <button class="nivel" data-nivel="dificil">Difícil</button>
+    </div>
+
+    <!-- Área do jogo -->
+    <div id="jogo" style="display:none;">
+      <h1>Jogo da Forca</h1>
+      <canvas id="forca" width="200" height="200"></canvas>
+      <p class="palavra-secreta" id="palavra-secreta"></p>
+      <p class="letras-erradas" id="letras-erradas"></p>
+      <p>Tentativas restantes: <span id="tentativas"></span></p>
+      
+      <input type="text" id="entrada" maxlength="1" placeholder="Digite uma letra">
+      <button id="chutar">Chutar</button>
+      <button id="reiniciar">Reiniciar</button>
+      <button id="voltar">Voltar ao Menu</button>
+
+      <p class="mensagem" id="mensagem"></p>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
